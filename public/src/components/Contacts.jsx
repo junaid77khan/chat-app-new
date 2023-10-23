@@ -69,7 +69,7 @@ const Container = styled.div`
   grid-template-rows: 10% 75% 15%;
   overflow: hidden;
   background: rgb(0,181,255);
-  background: radial-gradient(circle, rgba(0,181,255,1) 45%, rgba(98,0,255,1) 100%);
+  background: radial-gradient(circle, rgba(0,181,255,1) 3%, rgba(0,174,245,1) 9%, rgba(43,49,49,1) 100%);
   .brand {
     display: flex;
     align-items: center;
@@ -120,12 +120,12 @@ const Container = styled.div`
       }
     }
     .selected {
-      background-color: #9a86f3;
+      background-color: #008cc5;
     }
   }
 
   .current-user {
-    background-color: #0d0d30;
+    background-color: #008cc5;
     display: flex;
     justify-content: center;
     align-items: center;

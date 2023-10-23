@@ -52,8 +52,8 @@ const Container = styled.div`
   display: grid;
   align-items: center;
   grid-template-columns: 5% 95%;
-  background-color: #00b5ff;
-  border-radius: 14px;
+  background-color: #008CC5;
+  // border-radius: 14px;
   padding: 0 2rem;
   @media screen and (min-width: 720px) and (max-width: 1080px) {
     padding: 0 1rem;
@@ -74,7 +74,7 @@ const Container = styled.div`
       .emoji-picker-react {
         position: absolute;
         top: -350px;
-        background-color: #080420;
+        background-color: #008cc5;
         box-shadow: 0 5px 10px #9a86f3;
         border-color: #9a86f3;
         .emoji-scroll-wrapper::-webkit-scrollbar {
@@ -105,7 +105,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     gap: 2rem;
-    background-color: #98e1ff;
+    background-color: #fff;
     input {
       width: 90%;
       height: 60%;
@@ -128,7 +128,7 @@ const Container = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #98e1ff;
+      background-color: #0A0A13;
       border: none;
       @media screen and (min-width: 720px) and (max-width: 1080px) {
         padding: 0.3rem 1rem;

@@ -136,7 +136,7 @@ const FormContainer = styled.div`
   gap: 1rem;
   align-items: center;
   background: rgb(0,181,255);
-background: radial-gradient(circle, rgba(0,181,255,1) 45%, rgba(98,0,255,1) 100%);
+  background: radial-gradient(circle, rgba(0,181,255,1) 3%, rgba(0,174,245,1) 9%, rgba(43,49,49,1) 100%);
   .brand {
     display: flex;
     align-items: center;
@@ -146,7 +146,7 @@ background: radial-gradient(circle, rgba(0,181,255,1) 45%, rgba(98,0,255,1) 100%
       height: 5rem;
     }
     h1 {
-      color: #6200ff;
+      color: #4015ff;
       text-transform: uppercase;
     }
   }
@@ -162,24 +162,24 @@ background: radial-gradient(circle, rgba(0,181,255,1) 45%, rgba(98,0,255,1) 100%
   input {
     background-color: transparent;
     padding: 1rem;
-    border: 0.1rem solid #6200ff;
-    border-radius: 0.4rem;
+    border: 0.1rem solid #4015ff;
+    border-radius: 1rem;
     color: black;
     width: 100%;
     font-size: 1rem;
     &:focus {
-      border: 0.1rem solid #997af0;
+      border: 0.1rem solid #100;
       outline: none;
     }
   }
   button {
-    background-color: #6200ff;
+    background-color: #4015ff;
     color: white;
     padding: 1rem 2rem;
     border: none;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 0.4rem;
+    border-radius: 1rem;
     font-size: 1rem;
     text-transform: uppercase;
     transition: .2s all ease;
