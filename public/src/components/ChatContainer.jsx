@@ -145,7 +145,7 @@ const Container = styled.div`
     &::-webkit-scrollbar {
       width: 0.2rem;
       &-thumb {
-        background-color: #ffffff39;
+        background-color: #fffff39;
         width: 0.1rem;
         border-radius: 1rem;
       }
@@ -159,7 +159,7 @@ const Container = styled.div`
         padding: 1rem;
         font-size: 1.1rem;
         border-radius: 1rem;
-        color: #d1d1d1;
+        color: #fff;
         @media screen and (min-width: 720px) and (max-width: 1080px) {
           max-width: 70%;
         }

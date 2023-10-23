@@ -101,8 +101,7 @@ const FormContainer = styled.div`
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background: rgb(0,181,255);
-background: radial-gradient(circle, rgba(0,181,255,1) 3%, rgba(0,174,245,1) 9%, rgba(43,49,49,1) 100%);
+  background: url('https://imgs.search.brave.com/cp3OEplyW_DQcyon3MO9ScspkCIK9sYgBBaudnapySs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvNzMz/MTU4MS5qcGc');
   .brand {
     display: flex;
     align-items: center;
@@ -121,12 +120,12 @@ background: radial-gradient(circle, rgba(0,181,255,1) 3%, rgba(0,174,245,1) 9%, 
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 2rem;
     padding: 5rem;
   }
   input {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 1rem;
     border: 0.1rem solid #4015ff;
     border-radius: 1rem;
@@ -153,7 +152,7 @@ background: radial-gradient(circle, rgba(0,181,255,1) 3%, rgba(0,174,245,1) 9%, 
     }
   }
   span {
-    color: gray;
+    color: #fff;
     text-transform: uppercase;
     a {
       color: #4015ff;
