@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/logoChat.svg";
 
 export default function Contacts({ contacts, changeChat }) {
   const [currentUserName, setCurrentUserName] = useState(undefined);
@@ -22,8 +22,8 @@ export default function Contacts({ contacts, changeChat }) {
       {currentUserImage && currentUserImage && (
         <Container>
           <div className="brand">
-            <img src={Logo} alt="logo" />
-            <h3>snappy</h3>
+            <img className="logo1" src={Logo} alt="logo" />
+            <h3>Chatly</h3>
           </div>
           <div className="contacts">
             {contacts.map((contact, index) => {
@@ -68,7 +68,8 @@ const Container = styled.div`
   display: grid;
   grid-template-rows: 10% 75% 15%;
   overflow: hidden;
-  background-color: #080420;
+  background: rgb(0,181,255);
+  background: radial-gradient(circle, rgba(0,181,255,1) 45%, rgba(98,0,255,1) 100%);
   .brand {
     display: flex;
     align-items: center;

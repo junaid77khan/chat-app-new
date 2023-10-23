@@ -12,7 +12,7 @@ export default function Welcome() {
   }, []);
   return (
     <Container>
-      <img src={Robot} alt="" />
+      {/* <img src={Robot} alt="" /> */}
       <h1>
         Welcome, <span>{userName}!</span>
       </h1>
@@ -27,6 +27,7 @@ const Container = styled.div`
   align-items: center;
   color: white;
   flex-direction: column;
+  text-transform: uppercase;
   img {
     height: 20rem;
   }

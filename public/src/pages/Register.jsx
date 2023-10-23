@@ -11,7 +11,7 @@ export default function Register() {
   const navigate = useNavigate();
   const toastOptions = {
     position: "bottom-right",
-    autoClose: 8000,
+    autoClose: 5000,
     pauseOnHover: true,
     draggable: true,
     theme: "dark",
@@ -90,23 +90,23 @@ export default function Register() {
         <form action="" onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
             <img src={Logo} alt="logo" />
-            <h1>snappy</h1>
+            <h1>Chatly</h1>
           </div>
           <input
             type="text"
-            placeholder="Username"
+            placeholder="Enter your Username"
             name="username"
             onChange={(e) => handleChange(e)}
           />
           <input
             type="email"
-            placeholder="Email"
+            placeholder="Enter your Email"
             name="email"
             onChange={(e) => handleChange(e)}
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Enter your Password"
             name="password"
             onChange={(e) => handleChange(e)}
           />
@@ -116,7 +116,7 @@ export default function Register() {
             name="confirmPassword"
             onChange={(e) => handleChange(e)}
           />
-          <button type="submit">Create User</button>
+          <button type="submit">Create Account</button>
           <span>
             Already have an account ? <Link to="/login">Login.</Link>
           </span>
@@ -135,7 +135,8 @@ const FormContainer = styled.div`
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-color: #131324;
+  background: rgb(0,181,255);
+background: radial-gradient(circle, rgba(0,181,255,1) 45%, rgba(98,0,255,1) 100%);
   .brand {
     display: flex;
     align-items: center;
@@ -145,7 +146,7 @@ const FormContainer = styled.div`
       height: 5rem;
     }
     h1 {
-      color: white;
+      color: #6200ff;
       text-transform: uppercase;
     }
   }
@@ -154,16 +155,16 @@ const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #00000076;
+    background-color: #fff;
     border-radius: 2rem;
     padding: 3rem 5rem;
   }
   input {
     background-color: transparent;
     padding: 1rem;
-    border: 0.1rem solid #4e0eff;
+    border: 0.1rem solid #6200ff;
     border-radius: 0.4rem;
-    color: white;
+    color: black;
     width: 100%;
     font-size: 1rem;
     &:focus {
@@ -172,7 +173,7 @@ const FormContainer = styled.div`
     }
   }
   button {
-    background-color: #4e0eff;
+    background-color: #6200ff;
     color: white;
     padding: 1rem 2rem;
     border: none;
@@ -181,15 +182,16 @@ const FormContainer = styled.div`
     border-radius: 0.4rem;
     font-size: 1rem;
     text-transform: uppercase;
-    &:hover {
-      background-color: #4e0eff;
-    }
+    transition: .2s all ease;
+    // &:hover {
+    //   background-color: #6200ff;
+    // }
   }
   span {
-    color: white;
+    color: gray;
     text-transform: uppercase;
     a {
-      color: #4e0eff;
+      color: #6200ff;
       text-decoration: none;
       font-weight: bold;
     }
