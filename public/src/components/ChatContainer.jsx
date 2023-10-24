@@ -119,6 +119,7 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #1E566B;
     padding: 0 2rem;
     .user-details {
       display: flex;
@@ -142,6 +143,7 @@ const Container = styled.div`
     flex-direction: column;
     gap: 1rem;
     overflow: auto;
+    background-color: #1E566B;
     &::-webkit-scrollbar {
       width: 0.2rem;
       &-thumb {

@@ -21,9 +21,16 @@ export default function Contacts({ contacts, changeChat }) {
     <>
       {currentUserImage && currentUserImage && (
         <Container>
-          <div className="brand">
-            <img className="logo1" src={Logo} alt="logo" />
-            <h3>Chatly</h3>
+          <div className="current-user">
+            <div className="avatar">
+              <img
+                src={`data:image/svg+xml;base64,${currentUserImage}`}
+                alt="avatar"
+              />
+            </div>
+            <div className="username">
+              <h2>{currentUserName}</h2>
+            </div>
           </div>
           <div className="contacts">
             {contacts.map((contact, index) => {
@@ -48,16 +55,9 @@ export default function Contacts({ contacts, changeChat }) {
               );
             })}
           </div>
-          <div className="current-user">
-            <div className="avatar">
-              <img
-                src={`data:image/svg+xml;base64,${currentUserImage}`}
-                alt="avatar"
-              />
-            </div>
-            <div className="username">
-              <h2>{currentUserName}</h2>
-            </div>
+          <div className="brand">
+            <img className="logo1" src={Logo} alt="logo" />
+            <h3>Chatly</h3>
           </div>
         </Container>
       )}
@@ -89,6 +89,7 @@ const Container = styled.div`
     align-items: center;
     overflow: auto;
     gap: 0.8rem;
+    margin-top: 2rem;
     &::-webkit-scrollbar {
       width: 0.2rem;
       &-thumb {
@@ -126,13 +127,14 @@ const Container = styled.div`
 
   .current-user {
     background-color: #008cc5;
+    padding: 2rem 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     .avatar {
       img {
-        height: 4rem;
+        height: 3.4rem;
         max-inline-size: 100%;
       }
     }

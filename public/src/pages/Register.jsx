@@ -87,9 +87,6 @@ export default function Register() {
   return (
     <>
       <FormContainer>
-        {/* <div className="bg">
-          <img src="https://imgs.search.brave.com/cp3OEplyW_DQcyon3MO9ScspkCIK9sYgBBaudnapySs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvNzMz/MTU4MS5qcGc" alt="" />
-        </div> */}
         <form action="" onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
             <img src={Logo} alt="logo" />

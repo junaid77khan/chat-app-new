@@ -27,6 +27,7 @@ const Container = styled.div`
   color: white;
   flex-direction: column;
   text-transform: uppercase;
+  background-color: #1E566B;
   img {
     height: 20rem;
   }
